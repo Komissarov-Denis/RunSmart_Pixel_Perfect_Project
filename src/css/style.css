@@ -1,0 +1,787 @@
+/*CSS rules to specify families: 
+font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+h2{
+	font-family: 'Playfair Display', serif;
+	/*font-size: 30px;*/
+	font-size: calc(20px + 10 * (100vw / 1200));
+	color: #626262;
+}
+
+h3{
+	font-family: 'Ubuntu', sans-serif;
+	/*font-size: 14px;*/
+	font-size: calc(10px + 4 * (100vw / 1200));
+	color: #b4ad9e;
+}
+
+p{
+	font-family: 'Playfair Display', serif;
+	/*font-size: 14px;*/
+	font-size: calc(10px + 4 * (100vw / 1200));
+	color: #626262;
+	line-height: 170%;
+	/*letter-spacing: -0.05px;*/
+	word-spacing: -1.3px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------HEADER-------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+body{
+	margin: 0 auto; 
+	max-width: 1200px;	
+}
+
+.container-fluid{ 
+	padding: 0px;
+	margin: 0 auto;	
+}
+
+div.global_container{
+	margin: 0 auto; 
+	max-width: 1200px;	
+}
+
+div.container{
+	margin: 0 auto; 
+	max-width: 1200px;
+	padding: 0px 70px 0px 70px;
+}
+
+
+/*---------------------------HEADER--------------------------*/
+
+
+section.Logo_menu_homepage{
+	max-height: 675px;
+	max-width: 1060px; 
+	margin: 0 auto; 
+}
+
+
+/*----------------MENU---------------*/
+
+div.Logo{
+	height: 160px;	
+}
+div.menu{
+	height: 160px;	
+}
+
+div.Logo a.Logo_img{
+	display: block;
+	padding: 38% 0px 37% 0px;
+}
+
+ul.list_1{		
+	margin: 8% 0px 7% auto;
+	text-align: right;
+	padding-left: 0px;
+}
+
+ul.list_1 li{
+	display: inline-block;	
+	list-style-type: none;
+}
+
+ul.list_1 li a{
+	/*font-size: 14px;*/
+	font-size: calc(10px + 4 * (100vw / 1200));
+	color: #626262;
+	font-family: 'Playfair Display', serif;	
+	text-decoration: none;
+	padding-left: 100px;		
+}
+
+/*-------------HOMEPAGE------------*/
+
+img.img-adaptive-homepage{
+	display: block;
+	height: auto;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+} 
+
+
+/*----------------------------------------------FIRST-POST---------------------------------------------*/
+
+
+section.first_post{
+	max-height: 1792px;
+	max-width: 900px; 
+	margin: 0 auto; 
+}
+
+div.post1{
+	padding-bottom: 116px;
+}
+
+div.post1 h3{
+	padding-top: 80px;
+}
+
+div.post1 h3.comment{
+	padding-top: 32px;	
+}
+
+div.post1 h2{
+	margin-top: 18px;
+}
+
+div.post1 p.p1{		
+	max-width: 870px;	
+}
+
+div.post2 h3.lifestyle, div.post3 h3.lifestyle, div.post4 h3.photodiary, div.post5 h3.photodiary, div.post6 h3.lifestyle, div.post7 h3.lifestyle{
+	padding-top: 14px;
+}
+
+div.post3 h3.lifestyle, div.post5 h3.photodiary, div.post7 h3.lifestyle{
+	padding-left: 27px;
+}
+
+div.post2 h2.festival, div.post3 h2.coffee, div.post4 h2.dream, div.post5 h2.Alps, div.post6 h2.song, div.post7 h2.days{
+	margin-top: 18px;
+}
+
+div.post3 h2.coffee, div.post5 h2.Alps, div.post7 h2.days{
+	padding-left: 27px;
+}
+
+div.post2 p.p2, div.post3 p.p3, div.post4 p.p4, div.post5 p.p5, div.post6 p.p6, div.post7 p.p7{
+	max-width: 420px;
+}
+
+div.post2 p.p2, div.post4 p.p4, div.post6 p.p6 {
+	padding-right: 15px;
+}
+
+div.post3 p.p3, div.post5 p.p5, div.post7 p.p7{
+	padding-left: 27px;
+}
+
+img.img-adaptive-festival{
+	display: block;
+	height: auto;
+	width: 94%;
+	background-repeat: no-repeat;
+	background-position: center center;
+} 
+
+img.img-adaptive-coffee{
+	display: block;
+	height: auto;
+	width: 94%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-left: 27px;	
+} 
+
+img.img-adaptive-american_dream{
+	display: block;
+	height: auto;
+	width: 94%;
+	background-repeat: no-repeat;
+	background-position: center center;
+} 
+
+img.img-adaptive-Alps{
+	display: block;
+	height: auto;
+	width: 94%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-left: 27px;	
+} 
+
+div.post2, div.post3, div.post4, div.post5, div.post6, div.post7{
+	padding-bottom: 112px;
+}
+
+
+/*-----------------------------------------------SING-UP-----------------------------------------------*/
+
+
+section.Sign_up{
+	height: 285px;
+	max-width: 1060px;
+	background: #f0f0f0;
+	margin: 0 auto 104px auto;
+}
+
+div.central_block{
+	max-width: 400px;
+	margin: 0 auto;
+	border-bottom: 2px solid;	
+}
+
+h2.Sign_up{
+	text-align: center;	
+	padding-top: 40px;
+	padding-bottom: 35px;
+}
+
+form.email_arrow input{
+	font-family: 'Playfair Display', serif;;
+	font-size: 14px;
+	vertical-align: top;
+	padding-bottom: 6px;
+	border: none;
+	background: inherit;
+	width: 360px;
+}
+
+/*form.email_arrow button.arrow{*/
+form.email_arrow a.arrow{	
+	float: right;
+	border: none;
+	padding: 0px 0px;
+}
+
+/*button.arrow img{*/
+a.arrow img{	
+	display: block;		
+	margin: 10% 0px 10% auto;
+}
+
+/*-----------------------------------------TOP-SONG-&-WINTER-DAYS--------------------------------------*/
+
+section.second_post{
+	max-height: 746px;
+	max-width: 900px; 	
+	margin: 0 auto 36px auto; 
+}
+
+img.img-adaptive-top_song{
+	display: block;
+	height: auto;
+	width: 94%;
+	background-repeat: no-repeat;
+	background-position: center center;
+} 
+
+img.img-adaptive-winter_days{
+	display: block;
+	height: auto;
+	width: 94%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-left: 27px;	
+} 
+
+/*---------------------------------------------LOAD-BUTTON---------------------------------------------*/
+
+section.load_button{
+	height: 60px;
+	width: 900px; 
+	margin: 0 auto 168px auto;
+}
+
+a.load_btn{
+	height: 60px;
+	width: 164px;
+	display: block;
+	margin: 0px auto 0px auto;
+	border: 1px solid #626262;
+	color: #626262;	
+	text-align: center;
+	line-height: 56px;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+a.load_btn:hover {
+	height: 60px;
+	width: 164px;
+	display: block;
+	margin: 0px auto 0px auto;
+	border: 1px solid #626262;
+	color: #ffffff;	
+	text-align: center;
+	line-height: 56px;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	text-decoration: none;
+	background-color: #626262;
+}
+
+/*---------------------------------------------FOOTER--------------------------------------------------*/
+
+footer.footer{
+	height: 100px;
+	max-width: 1060px;
+	background: #f0f0f0;
+	margin: 0 auto;
+}
+
+div.licence, div.follow, div.nav_ico{
+	display: inline-block;
+	height: 100px;	
+	padding-top: 40px;
+}
+
+p.copyright{
+	display: inline-block;
+	text-align: left;	
+	margin: 0 auto;
+	padding-left: 10px;	
+
+}
+
+div.follow p.p8{
+	display: inline-block;		
+	float: right;
+	margin: 0 auto;		
+}
+
+div.nav_ico ul.list_2{
+	display: inline-block;	
+	list-style-type: none;	
+	padding-left: 0px;
+	float: right;
+	margin: 0 auto;
+	padding-right: 10px;		
+}
+
+div.nav_ico ul.list_2 li{
+	display: inline-block;
+	padding-left: 40px;
+	/*padding-top: 2px;*/
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------Breakpoints---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Экстрамалые девайсы («портретные телефоны», < 576px)-------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 575.98px) { 
+
+	ul.list_1 li a{
+		font-size: calc(10px + 4 * (100vw / 575));
+		/*font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 1200));*/
+	}
+
+	h2{	
+		font-size: calc(18px + 12 * (100vw / 992));
+		/*font-size: calc(20px + (22 + 22 * 0.7) * ((100vw - 768px) / 1200));*/
+	}
+
+	h3{	
+		font-size: calc(10px + 4 * (100vw / 575));	
+		/*font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 1200));*/
+	}
+
+	p{
+		font-size: calc(10px + 4 * (100vw / 575));
+		/*font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 1200));*/
+	}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------HEADER-------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+	div.container{		 
+		max-width: 1200px;
+		padding: 0px 20px 0px 20px;
+	}
+
+
+	/*----------------MENU---------------*/
+
+	div.Logo {
+    	height: 50px;
+	}
+
+	div.Logo_menu{
+		max-width: 430px;
+		margin: 0 auto;
+	}
+
+	div.menu {
+    	height: 50px;
+	}
+
+	div.Logo a.Logo_img {
+		padding: 6% 0px 5% 0px;
+	}
+
+	ul.list_1 {
+		margin: 6% 0px 5% auto;
+	}
+
+	ul.list_1 li a {
+		padding-left: 11px;
+	}
+
+/*----------------------------------------------FIRST-POST---------------------------------------------*/
+
+
+	section.first_post{
+		max-height: 3424px;		
+	}
+	
+	img.img-adaptive-festival, img.img-adaptive-coffee, img.img-adaptive-american_dream, img.img-adaptive-Alps, img.img-adaptive-top_song, img.img-adaptive-winter_days{
+		width: 100%;
+	}
+
+
+	div.post3 h3.lifestyle, div.post5 h3.photodiary, div.post7 h3.lifestyle{
+		padding-left: 0px;
+	}
+	div.post3 h2.coffee, div.post5 h2.Alps, div.post7 h2.days{
+		padding-left: 0px;
+	}
+	div.post3 p.p3, div.post5 p.p5, div.post7 p.p7{
+		padding-left: 0px;
+	}
+
+
+	img.img-adaptive-coffee, img.img-adaptive-Alps, img.img-adaptive-winter_days{	
+		padding-left: 0px;	
+	} 
+	 
+
+/*-----------------------------------------------SING-UP-----------------------------------------------*/
+
+
+	section.Sign_up{
+		height: 258px;		
+		margin: 0 auto 124px auto;
+	}
+
+	div.central_block{
+    	max-width: 300px;
+	}
+
+	h2.Sign_up {	    
+	    padding-top: 50px;
+	    padding-bottom: 35px;
+	}
+
+
+	form.email_arrow input{
+		width: 240px;
+	}
+
+
+/*-----------------------------------------TOP-SONG-&-WINTER-DAYS--------------------------------------*/
+
+	section.second_post{
+		max-height: 1424px;	
+		margin: 0 auto;			
+	}
+
+
+/*---------------------------------------------LOAD-BUTTON---------------------------------------------*/
+
+	section.load_button{
+		height: 60px;
+		width: 900px; 
+		margin: 0 auto 130px auto;
+	}
+
+
+/*---------------------------------------------FOOTER--------------------------------------------------*/
+
+	footer.footer{
+		height: 100px;
+	}
+
+	div.nav_ico ul.list_2 li {    
+    	padding-left: 20px;    
+	}
+
+	div.licence, div.follow, div.nav_ico{		
+		height: 50px;	/*?????????????????????????????????*/
+		padding-top: 15px;
+	}
+	
+}
+
+
+/* Малые девайсы («ландшафтные», >= 575px)--------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------HEADER-------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+	div.container{		 
+		max-width: 1200px;
+		padding: 0px 35px 0px 35px;
+	}
+
+
+	/*----------------MENU---------------*/
+
+	div.Logo{
+		height: 100px;	
+	}
+	div.menu{
+		height: 100px;	
+	}
+
+	ul.list_1 li a {
+		padding-left: 16px;
+	}
+
+/*----------------------------------------------FIRST-POST---------------------------------------------*/
+
+
+	section.first_post{
+		max-height: 3424px;		
+	}
+	
+	img.img-adaptive-festival, img.img-adaptive-coffee, img.img-adaptive-american_dream, img.img-adaptive-Alps, img.img-adaptive-top_song, img.img-adaptive-winter_days{
+		width: 100%;
+	}
+
+
+	div.post3 h3.lifestyle, div.post5 h3.photodiary, div.post7 h3.lifestyle{
+		padding-left: 0px;
+	}
+	div.post3 h2.coffee, div.post5 h2.Alps, div.post7 h2.days{
+		padding-left: 0px;
+	}
+	div.post3 p.p3, div.post5 p.p5, div.post7 p.p7{
+		padding-left: 0px;
+	}
+
+
+	img.img-adaptive-coffee, img.img-adaptive-Alps, img.img-adaptive-winter_days{	
+		padding-left: 0px;	
+	} 
+	 
+
+/*-----------------------------------------------SING-UP-----------------------------------------------*/
+
+
+	section.Sign_up{
+		height: 258px;		
+		margin: 0 auto 124px auto;
+	}
+
+	h2.Sign_up {	    
+	    padding-top: 32px;
+	    padding-bottom: 35px;
+	}
+
+
+/*-----------------------------------------TOP-SONG-&-WINTER-DAYS--------------------------------------*/
+
+	section.second_post{
+		max-height: 1424px;	
+		margin: 0 auto;			
+	}
+
+
+/*---------------------------------------------LOAD-BUTTON---------------------------------------------*/
+
+	section.load_button{
+		height: 60px;
+		width: 900px; 
+		margin: 0 auto 130px auto;
+	}
+
+
+/*---------------------------------------------FOOTER--------------------------------------------------*/
+
+	
+
+	div.nav_ico ul.list_2 li {    
+    	padding-left: 20px;    
+	}
+
+
+}
+
+
+
+/* Средние девайсы («таблетки», >= 768px) --------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991.98px) { /*нормально выглядит верстка - кроме first_post, reqvest paddings*/
+
+
+	ul.list_1 li a{
+		/*font-size: calc(10px + 4 * (100vw / 1200));*/
+		font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 768px) / 1200));
+	}
+
+	h2{	
+		font-size: calc(20px + (10 + 10 * 0.7) * ((100vw - 768px) / 1200));
+	}
+
+	h3{	
+		/*font-size: calc(10px + 4 * (100vw / 1200));	*/
+		font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 768px) / 1200));
+	}
+
+	p{
+		/*font-size: calc(10px + 4 * (100vw / 1200));*/
+		font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 768px) / 1200));
+	}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------HEADER-------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+	
+
+	ul.list_1 li a {
+		padding-left: 66px;
+	}
+
+/*----------------------------------------------FIRST-POST---------------------------------------------*/
+
+
+	
+
+
+	div.post3 h3.lifestyle, div.post5 h3.photodiary, div.post7 h3.lifestyle{
+		padding-left: 18px;
+	}
+	div.post3 h2.coffee, div.post5 h2.Alps, div.post7 h2.days{
+		padding-left: 18px;
+	}
+	div.post3 p.p3, div.post5 p.p5, div.post7 p.p7{
+		padding-left: 18px;
+	}
+
+
+	img.img-adaptive-coffee{	
+		padding-left: 18px;	
+	} 
+	img.img-adaptive-Alps{	
+		padding-left: 18px;	
+	} 
+
+/*-----------------------------------------------SING-UP-----------------------------------------------*/
+
+	div.central_block{
+		max-width: 320px;
+	}	
+
+	form.email_arrow input {
+		width: 280px;
+	}
+
+
+/*---------------------------------------------FOOTER--------------------------------------------------*/
+	
+	
+
+	div.nav_ico ul.list_2 li {    
+    	padding-left: 22px;    
+	}
+
+/*-----------------------------------------TOP-SONG-&-WINTER-DAYS--------------------------------------*/
+
+	img.img-adaptive-winter_days{
+		padding-left: 18px;	
+	}	
+
+}
+
+
+/* Большие девайсы (большие десктопы, >= 992px)---------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+	
+	
+	
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------HEADER-------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+	
+	
+
+/*---------------------------------------------FOOTER--------------------------------------------------*/
+
+	
+
+	div.nav_ico ul.list_2 li {    
+    	padding-left: 30px;    
+	}
+
+}
+
+
+/* Большие девайсы (большие десктопы, >= 1200px)--------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+
+	h2{	
+	font-size: 30px;	
+	}
+
+	h3{	
+	font-size: 14px;	
+	}
+
+	p{
+	font-size: 14px;	
+	}
+
+/*---------------------------------------------FOOTER--------------------------------------------------*/
+
+	
+
+}
+
+
+/* Экстра большие девайсы (большие десктопы, >= 1400px)-------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1400px) and (max-width: 1820.98px) {
+
+	h2{	
+	font-size: 30px;	
+	}
+
+	h3{	
+	font-size: 14px;	
+	}
+
+	p{
+	font-size: 14px;	
+	}
+
+}
+
+
+/* Экстра большие девайсы (большие десктопы, >= 1821px)-------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 1821px) {	
+
+
+	h2{	
+	font-size: 30px;	
+	}
+
+	h3{	
+	font-size: 14px;	
+	}
+
+	p{
+	font-size: 14px;	
+	}
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
