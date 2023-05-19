@@ -105,26 +105,33 @@ $(document).ready(function(){
 		});
 	};
 	validateForms('#main-form');
-	validateForms('#consultation');
-	validateForms('#order');
+	validateForms('#consultation form');
+	validateForms('#order form');
 
 	//маска формы номера телефона
 	$('input[name=phone]').mask('+7(999) 999-99-99');
 
-	//отправка формы
+	// отправка формы!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	$('form').submit(function(e) {
-		e.preventDefault();
-		$.ajax({
-			type: 'POST',
-			url: 'mailer/smart.php',
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find('input').val('');
-			$('#consultation, #order, #main-form').fadeOut();
-			$('.modal-window__overlay, #thanks').fadeIn('slow');
-			$('form').trigger('reset');
-		});
-		return false;
+		const form = e.target;	  
+		if (!form.checkValidity()) {	  
+		  // Форма не прошла валидацию - отменить отправку
+		  e.preventDefault();
+		  e.stopImmediatePropagation();	  
+		} else {
+			e.preventDefault();
+			$.ajax({
+				type: 'POST',
+				url: 'mailer/smart.php',
+				data: $(this).serialize()
+			}).done(function() {
+				$(this).find('input').val('');
+				$('#consultation, #order, #main-form').fadeOut();
+				$('.modal-window__overlay, #thanks').fadeIn('slow');
+				$('form').trigger('reset');
+			});
+			return false;
+		}
 	});
 
 });
