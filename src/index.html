@@ -169,6 +169,7 @@
 							<input name="name" required type="text" placeholder="Ваше имя">
 							<input name="phone" required placeholder="Ваш телефон">
 							<input name="email" required type="email" placeholder="Ваш E-mail">
+							<input name="order" required hidden type="text" placeholder="Консультация" value="Консультация">
 							<button class="button button_submit" type="submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
 							<!-- <input type="reset"> -->
 						</form>
@@ -711,9 +712,10 @@
 							<div class="modal-window__subtitle">Просто заполните форму заявки</div>
 							<div class="modal-window__description">и мы перезвоним вам в течении 10 минут</div>
 							<form class="feed-form feed-form_mt25" action="#">
-								<input name="name" type="text" placeholder="Ваше имя">
-								<input name="phone" placeholder="Ваш телефон">
-								<input name="email" type="email" placeholder="Ваш E-mail">
+								<input name="name" required type="text" placeholder="Ваше имя">
+								<input name="phone" required placeholder="Ваш телефон">
+								<input name="email" required type="email" placeholder="Ваш E-mail">
+								<input name="order" required hidden type="text" placeholder="Консультация" value="Консультация">
 								<button class="button button_submit button_modal" type="submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
 							</form>
 						</div>
@@ -721,11 +723,12 @@
 						<div class="modal-window__wrapper" id="order">
 							<div class="modal-window__close">&times;</div>
 							<div class="modal-window__subtitle">Ваш заказ:</div>
-							<div class="modal-window__description">Пульсометр Polar FT1</div>
+							<div class="modal-window__description">Пульсометр...</div>
 							<form class="feed-form feed-form_mt25" action="#">
 								<input name="name" required type="text" placeholder="Ваше имя">
 								<input name="phone" required placeholder="Ваш телефон">
 								<input name="email" required type="email" placeholder="Ваш E-mail">
+								<input name="order" required hidden type="text" placeholder="Заказ">
 								<button class="button button_submit button_modal" type="submit">КУПИТЬ</button>
 							</form>
 						</div>

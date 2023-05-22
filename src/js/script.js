@@ -71,10 +71,23 @@ $(document).ready(function(){
 	});
 	$('.button_mini').each(function(i) {
 		$(this).on('click', function() {
-			$('#order .modal-window__description').text($('.catalog-item__subtitle').eq(i).text());
+			// $('#order .modal-window__description').text($('.catalog-item__subtitle').eq(i).text());
+									
+			const brandPulse = $('.catalog-item__subtitle').eq(i).text();
+			console.log(brandPulse);
+			const pricePulse = $('.catalog-item__price').eq(i).text();
+			console.log(pricePulse);
+			const text = [brandPulse, pricePulse].join(', цена: ');
+			console.log(text);
+			$('#order .modal-window__description').text(text);
+
+			const orderText = $('#order .modal-window__description').text();			
+			$('input[name=order]').val(orderText);
+			console.log(orderText);
+			
 			$('.modal-window__overlay, #order').fadeIn('slow');
 			$('.button_mini').fadeOut('slow');
-		});
+		});		
 	});
 
 	//валидация форм
