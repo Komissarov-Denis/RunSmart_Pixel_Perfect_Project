@@ -16,6 +16,7 @@
 //     })
 // });
 
+
 //карусель
 $(document).ready(function(){
 	$('.carousel__inner-wrapper').slick({
@@ -44,6 +45,7 @@ $(document).ready(function(){
 		  .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
 		  .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
 	});
+
 
 	//каталог - слайдер
 	function toggleSlide(item) {
@@ -90,6 +92,7 @@ $(document).ready(function(){
 		});		
 	});
 
+
 	//валидация форм
 	function validateForms(form) {
 		$(form).validate({
@@ -121,10 +124,12 @@ $(document).ready(function(){
 	validateForms('#consultation form');
 	validateForms('#order form');
 
+
 	//маска формы номера телефона
 	$('input[name=phone]').mask('+7(999) 999-99-99');
+	
 
-	// отправка формы!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// отправка формы
 	$('form').submit(function(e) {
 		const form = e.target;	  
 		if (!form.checkValidity()) {	  

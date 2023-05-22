@@ -46,10 +46,10 @@
 	&__description {
 		color: $black_color;
 		font-size: 14px;
-		line-height: 14px;
+		line-height: 24px;
 		font-weight: 800;
 		text-align: center;
-		margin-top: 10px;
+		margin-top: 8px;
 	}
 	&__wrapper_mini {
 		min-height: 140px;
@@ -83,7 +83,7 @@
 		}
 		&__description {
 			font-size: $height_14-12;
-			// line-height: 22px;
+			line-height: $height_24-13;
 		}	
 	}
 }
@@ -92,7 +92,7 @@
 
 	.modal-window {
 		&__subtitle {
-			width: 70%;
+			width: 80%;
 			margin: 0 auto;
 		}
 	}	
@@ -102,7 +102,7 @@
 
 	.modal-window {
 		&__description {
-			width: 70%;
+			width: 80%;
 			margin: 10px auto 0 auto;
 		}
 	}
