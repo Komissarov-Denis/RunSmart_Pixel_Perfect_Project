@@ -17,8 +17,10 @@
 // });
 
 
-//карусель
+
 $(document).ready(function(){
+
+	//карусель
 	$('.carousel__inner-wrapper').slick({
 		// dots: true,
 		// infinite: true,
@@ -76,11 +78,11 @@ $(document).ready(function(){
 			// $('#order .modal-window__description').text($('.catalog-item__subtitle').eq(i).text());
 									
 			const brandPulse = $('.catalog-item__subtitle').eq(i).text();
-			console.log(brandPulse);
+			// console.log(brandPulse);
 			const pricePulse = $('.catalog-item__price').eq(i).text();
-			console.log(pricePulse);
+			// console.log(pricePulse);
 			const text = [brandPulse, pricePulse].join(', цена: ');
-			console.log(text);
+			// console.log(text);
 			$('#order .modal-window__description').text(text);
 
 			const orderText = $('#order .modal-window__description').text();			
@@ -150,6 +152,18 @@ $(document).ready(function(){
 			});
 			return false;
 		}
+	});
+
+	//Smooth scroll & pageup
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else $('.pageup').fadeOut();
+	});
+	$("a[href^='#']").click(function() {
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
 	});
 
 });
