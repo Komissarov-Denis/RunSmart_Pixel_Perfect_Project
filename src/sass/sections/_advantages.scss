@@ -34,7 +34,17 @@
 			display: block;
 			margin: 0 auto;
 		}
-	}	
+	}
+	&__img_animated	{
+		animation: heartbeat 1.5s ease infinite;
+		// animation-name: heartbeat;
+		// animation-duration: 1.5s;
+		// animation-timing-function: ease;
+		// animation-iteration-count: infinite;
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
 	&__subtitle {
 		margin: 35px 0 20px 0;
 		color: $black_color;
