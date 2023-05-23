@@ -98,6 +98,16 @@
 	}	
 }
 
+@media (max-width: 767.98px) {
+
+	.modal-window {
+		&__close {
+			top: 4px;
+			right: 0;
+		}
+	}
+}
+
 @media (max-width: 575.98px) {
 
 	.modal-window {
@@ -108,15 +118,15 @@
 	}
 }
 
-@media (max-width: 349.98px) {
+// @media (max-width: 349.98px) {
 
-	.modal-window {
-		&__close {
-			top: 4px;
-			right: 0;
-		}
-	}
-}
+// 	.modal-window {
+// 		&__close {
+// 			top: 4px;
+// 			right: 0;
+// 		}
+// 	}
+// }
 
 @media (max-width: 319.98px) {
 
