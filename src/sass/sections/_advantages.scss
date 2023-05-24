@@ -35,12 +35,25 @@
 			margin: 0 auto;
 		}
 	}
-	&__img_animated	{
-		animation: heartbeat 1.5s ease infinite;
+	&__heart_animated	{
+		animation: heartbeat 1.6s ease-in-out infinite;
 		// animation-name: heartbeat;
-		// animation-duration: 1.5s;
-		// animation-timing-function: ease;
+		// animation-duration: 1.6s;
+		// animation-timing-function: ease-in-out;
 		// animation-iteration-count: infinite;
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+	&__cup_animated {
+		animation: flip 3.5s ease-in-out infinite;
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+	&__shoe_animated {
+		animation: rotateInDownLeft 2s ease-in-out infinite;
+		transform-origin: top center;
 		&:hover {
 			animation-play-state: paused;
 		}
