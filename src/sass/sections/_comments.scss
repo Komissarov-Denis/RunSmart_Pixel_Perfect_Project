@@ -17,6 +17,9 @@
 		flex-direction: row;
 		justify-content: space-between;
 		margin-bottom: 35px;
+		&_animated {
+			animation: zoomInUp 5s ease-in-out;
+		}
 	}
 	&__foto {
 		display: block;
