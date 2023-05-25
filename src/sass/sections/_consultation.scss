@@ -1,0 +1,50 @@
+.consultation {
+	.container-fluid {
+		min-height: 650px;
+	}
+	.section-wrapper {
+		padding: 90px 0 90px 0;
+		background: url("../img/consultation/bg2.png") center (center/cover) no-repeat; 
+	}
+	&__description {
+		margin-top: 8px;
+		color: $white_color;
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 500;
+	}
+	.error {
+		border: 3px solid $green_color;
+		font-size: 13px;
+		font-weight: 600;
+	}
+	label.error {
+		border: none;
+		text-align: center;
+		color: $green_color;
+	}
+}
+
+@media (max-width: 1920px)  {
+
+	.consultation {
+		.container-fluid {
+			min-height: $height_650-420;
+		}
+		.section-wrapper {
+			padding-bottom: $height_90-35;
+			padding-top: $height_90-35;
+		}
+		&__description {
+			font-size: $height_24-13;
+			line-height: $height_30-14;
+		}
+	}
+}
+
+@media (max-width: 319.98px) {
+
+	.consultation { 	
+ 		display: none;
+	}
+}
